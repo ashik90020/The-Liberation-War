@@ -7,3 +7,10 @@ function updateTime() {
 }
 
 setInterval(updateTime, 1000);
+
+// nav js
+const toggleBtn = document.getElementById("toggleBtn");
+
+toggleBtn.addEventListener("click", () => {
+  toggleBtn.classList.toggle("active");
+});
