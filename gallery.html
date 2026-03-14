@@ -20,18 +20,19 @@
   </head>
 
   <body>
-    <!-- Navbar -->
-
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">Liberation War Archive</a>
 
         <button
-          class="navbar-toggler"
+          id="toggleBtn"
+          class="toggle-btn d-lg-none"
           data-bs-toggle="collapse"
           data-bs-target="#menu"
         >
-          <span class="navbar-toggler-icon"></span>
+          <div id="bar1" class="bars"></div>
+          <div id="bar2" class="bars"></div>
+          <div id="bar3" class="bars"></div>
         </button>
 
         <div class="collapse navbar-collapse" id="menu">
@@ -61,7 +62,6 @@
     </nav>
 
     <div class="container mt-3">
-      <!-- Main Gallery -->
       <div class="row g-3 mb-4">
         <div class="col-6 col-md-3">
           <div class="card gallery-card">

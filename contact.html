@@ -25,11 +25,14 @@
         <a class="navbar-brand" href="#">Liberation War Archive</a>
 
         <button
-          class="navbar-toggler navbar-toggler border border-white border-1 bg-light"
+          id="toggleBtn"
+          class="toggle-btn d-lg-none"
           data-bs-toggle="collapse"
           data-bs-target="#menu"
         >
-          <span class="navbar-toggler-icon"></span>
+          <div id="bar1" class="bars"></div>
+          <div id="bar2" class="bars"></div>
+          <div id="bar3" class="bars"></div>
         </button>
 
         <div class="collapse navbar-collapse" id="menu">
@@ -58,121 +61,117 @@
       </div>
     </nav>
 
-<main>
+    <main>
+      <div class="container">
+        <h1 class="display-5 text-center mb-4">Contact</h1>
+        <p class="text-dark mb-5">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
+          possimus nulla nemo, voluptatum pariatur quos numquam iste laudantium
+          vel animi autem ipsum eos excepturi voluptate asperiores dolor qui
+          modi incidunt itaque debitis eum? Sequi aliquid harum ex laboriosam ab
+          repellendus, repellat eum hic quidem, eos molestiae reiciendis. Sequi,
+          adipisci libero?
+        </p>
 
-  <div class="container mt-4 text-center">
-    <img src="assets/Image/Home/banner.jpg" class="img-fluid banner" />
-  </div>
+        <div class="row g-4">
+          <!-- Contact Info + Map -->
+          <div class="col-md-6 ">
+            <div class="card h-100">
+              <div class="card-body ">
+                <h5 class="card-title">Contact Information</h5>
+                <p><strong>Name:</strong> Lorem Ipsum</p>
+                <p><strong>Email:</strong> Lorem@gmail.com</p>
+                <p><strong>Phone:</strong> +8801586253654</p>
+                <p><strong>Address:</strong> Lorem ipsum dolor sit amet.</p>
 
-  <div class="container mt-4">
-    <h1 class="text-center display-5">
-      The Liberation War of Bangladesh 1971
-    </h1>
-
-    <div class="quote">
-      "The struggle this time is the struggle for independence."
-
-      <br />
-
-      — Bangabandhu Sheikh Mujibur Rahman
-    </div>
-  </div>
-
-  <div class="container mt-4">
-    <h3>Introduction</h3>
-
-    <p>
-      The Bangladesh Liberation War of 1971 was a historic struggle that led
-      to the independence of Bangladesh from Pakistan. The war began on 26
-      March 1971 after the Pakistani military launched Operation Searchlight
-      to suppress the Bengali nationalist movement. Millions of people
-      participated in the fight for freedom. The Mukti Bahini (freedom
-      fighters), along with the support of the people of Bangladesh, fought
-      bravely for nine months against the Pakistani military forces. The war
-      caused immense suffering, including the deaths of approximately three
-      million people and the displacement of millions of refugees who fled to
-      neighboring India. Finally, on 16 December 1971, the Pakistani forces
-      surrendered in Dhaka, marking the birth of a new independent nation —
-      Bangladesh.
-    </p>
-  </div>  
-
-  <div class="container mt-4">
-    <h3>Significance in History</h3>
-
-    <p>
-      The Liberation War is one of the most important events in the history of
-      Bangladesh. It represents the struggle for freedom, cultural identity,
-      and political rights of the Bengali people. The leadership of
-      Bangabandhu Sheikh Mujibur Rahman inspired the entire nation to rise
-      against oppression. The courage of the freedom fighters and the
-      sacrifices made by countless civilians created the foundation of a
-      sovereign and democratic Bangladesh. Today, the war remains a symbol of
-      national pride and unity for the people of Bangladesh.
-    </p>
-  </div> 
-
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="assets/Image/Home/gl4.webp" class="card-img-top" />
-
-          <div class="card-body">
-            <h5 class="card-title">Historical Documents</h5>
-
-            <p>
-              Explore important documents, speeches, and records from the
-              Bangladesh Liberation War.
-            </p>
+                <iframe class="mt-5"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.336453436167!2d89.37025367537065!3d24.85235587793468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc54e3ac905da3%3A0xfd0a63bdbc65ebc8!2sCybertech!5e0!3m2!1sen!2sbd!4v1772866694469!5m2!1sen!2sbd"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
           </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-dark">View Documents</a>
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Send Us a Message</h5>
+                <form id="frm">
+                  <div class="mb-3">
+                    <label for="exampleInputName1" class="form-label"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputName1"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputSubject1" class="form-label"
+                      >Subject</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputSubject1"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="4"
+                    ></textarea>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Attachment</label>
+                    <input class="form-control" type="file" id="formFile" />
+                  </div>
+
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Check me out</label
+                    >
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
-
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="assets/Image/Home/gl3.webp" class="card-img-top" />
-
-          <div class="card-body">
-            <h5 class="card-title">Freedom Fighter Interviews</h5>
-
-            <p>
-              Listen to the stories and memories of the brave freedom fighters
-              who fought for independence.
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-dark">View Documents</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="assets/Image/Home/gl2.webp" class="card-img-top" />
-
-          <div class="card-body">
-            <h5 class="card-title">Photo Gallery</h5>
-
-            <p>
-              Browse historical photographs that capture the moments of
-              courage, sacrifice, and victory.
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-dark">View Documents</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</main>
-
-
+    </main>
 
     <footer class="">
       <div
